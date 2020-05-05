@@ -3,8 +3,8 @@
 On April 2020 i started my study of software development at Trybe. so in this repository i will show all my exercises and projects that i will do during the course.
 
 **what i've done until now**
-[x] Unix & Bash
-[x] Git & Github
+- [x] Unix & Bash
+- [x] Git & Github
 
 I will update this every time that i complete somethin new.
 
