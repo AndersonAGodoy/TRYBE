@@ -65,7 +65,7 @@
 .reference ul li {
     display: inline;
     font-size: 35px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 footer {
