@@ -1,13 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br"></html>
+<!DOCTYPE html >
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width" />
         <title>Stomatopoda a Desgraça dos sete mares</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    
+            
     </head>
     <body>
         <header class="header">
-            <nav>
+            <nav class="header-nav">
                 <ul>
                     <li><a href="">Página Inicial</a></li>
                     <li><a href="">Sobre</a></li>
@@ -15,57 +21,64 @@
                 </ul>
             </nav>
         </header>
-        <h1>Soco a 80km/h: Conheça o Stomatopoda.</h1>
-        <img src="stamotopa.jpg" alt="Stomatopoda">
         <section>
             <article>
-                <h2>Fatos sobre a Stomatopoda</h1>
-                    <img src="stamotopa2.jpg" alt="stomatopoda">
-                    <p> Dê uma olhadinha no belíssimo animal acima. Ele tem uma aparência incrível, não é mesmo? Tendo como nome científico <em>Odontodactylus scyllarus</em> Com tantas cores e cheio de estruturas interessantes. O “mantis shrimp”, conhecido por vários nomes, como lagosta-boxeadora, tamarutaca e esquila, realmente é fantástico. Tanto que o pessoal do site The Oatmeal criou um infográfico superinformativo especialmente para esse crustáceo.</p>
-
-                    <p>Para começar, as lagostas-boxeadoras contam com olhos incríveis, que possuem três pontos focais cada e são capazes de enxergar do espectro ultravioleta ao infravermelho. Para que você tenha uma ideia, o olho humano contém milhões de células fotorreceptoras, entre elas os cones, que são as que nos permitem ver as cores.</p>
+                <h1 class="article-title">Soco a 80km/h: Conheça o Stomatopoda.</h1>
+                    <img class="article-img float-left" src="stamotopa2.jpg" alt="stomatopoda">
+                    <p class="article-text float-right"> Dê uma olhadinha no belíssimo animal acima. Ele tem uma aparência incrível, não é mesmo? Tendo como nome científico <em>Odontodactylus scyllarus</em> Com tantas cores e cheio de estruturas interessantes. O “mantis shrimp”, conhecido por vários nomes, como lagosta-boxeadora, tamarutaca e esquila, realmente é fantástico. Tanto que o pessoal do site The Oatmeal criou um infográfico superinformativo especialmente para esse crustáceo.</p>
+                   
+                    <p class="article-text float-right">Para começar, as lagostas-boxeadoras contam com olhos incríveis, que possuem três pontos focais cada e são capazes de enxergar do espectro ultravioleta ao infravermelho. Para que você tenha uma ideia, o olho humano contém milhões de células fotorreceptoras, entre elas os cones, que são as que nos permitem ver as cores.</p>
             </article>
+            <div class="clear"></div>
             <article>
-                <h3>16 cones, 12 de cores e mais 4 de Luz! </h3>
-                <img src="stomatopoda3.jpg" alt="Stomatopoda olhos">
-                <p>Nossos olhos possuem três tipos desses receptores — que respondem à luz azul, verde e vermelha —, que nos permitem perceber o espectro de cores que vemos. Os cães contam com apenas dois tipos de cones (verde e azul), e é por isso que eles vêm tons de azul, verde e um pouco de amarelo. Já as borboletas, sortudas, possuem cinco tipos de cones, o que significa que elas conseguem enxergar cores que o nosso cérebro é incapaz de processar.</p>
+                <h2 class="article-title">16 cones, 12 de cores e mais 4 de Luz! </h2>
+                <img class="article-img float-right" src="stomatopoda3.jpg" alt="Stomatopoda olhos">
+                <p class="article-text float-left">Nossos olhos possuem três tipos desses receptores — que respondem à luz azul, verde e vermelha —, que nos permitem perceber o espectro de cores que vemos. Os cães contam com apenas dois tipos de cones (verde e azul), e é por isso que eles vêm tons de azul, verde e um pouco de amarelo. Já as borboletas, sortudas, possuem cinco tipos de cones, o que significa que elas conseguem enxergar cores que o nosso cérebro é incapaz de processar.</p>
 
-                <p>Contudo, as lagostas-boxeadoras são um crustáceo tão sensacional que elas não possuem dois, três ou cinco tipos de cones apenas. Elas contam com 16! Assim, o arco-íris que elas enxergam deve ser uma verdadeira explosão termonuclear de cores, luz e beleza. Mas, como a grande maioria das criaturas, esses animais também possuem um lado obscuro. No caso das tamarutacas, esse lado é negro e sanguinário.</p>
+                <p class="article-text float-left">Contudo, as lagostas-boxeadoras são um crustáceo tão sensacional que elas não possuem dois, três ou cinco tipos de cones apenas. Elas contam com 16! Assim, o arco-íris que elas enxergam deve ser uma verdadeira explosão termonuclear de cores, luz e beleza. Mas, como a grande maioria das criaturas, esses animais também possuem um lado obscuro. No caso das tamarutacas, esse lado é negro e sanguinário.</p>
             </article>
-            <table>
-                <thead>
+            <div class="clear"></div>
+            <table class="striped">
+                <thead> 
                     <tr><th>Classificação Científica</th></tr>
+                    <tr>
+                        <td>Reino</td>
+                        <td>Filo</td>
+                        <td>Subfilo</td>
+                        <td>Classe</td>
+                        <td>Subclasse</td>
+                        <td>Ordem</td>
+                    </tr>
                 </thead>
-                <tr>
-                    <td>Reino</td>
-                    <td>Filo</td>
-                    <td>Subfilo</td>
-                    <td>Classe</td>
-                    <td>Subclasse</td>
-                    <td>Ordem</td>
-                </tr>
-                <tr>
-                    <td>Animal</td>
-                    <td>Artrópode</td>
-                    <td>Crustacea</td>
-                    <td>Malacostraca</td>
-                    <td>Hoplocarida</td>
-                    <td>Stomatopoda; Latreille, 1817</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td>Animal</td>
+                        <td>Artrópode</td>
+                        <td>Crustacea</td>
+                        <td>Malacostraca</td>
+                        <td>Hoplocarida</td>
+                        <td>Stomatopoda; Latreille, 1817</td>
+                    </tr>
+              </tbody>
             </table>
-            <aside> 
-                <h3>Referencias Bibliogŕaficas</h3>
-                <nav>
+            <aside class="reference"> 
+                <h3 class="article-title">Referencias Bibliogŕaficas</h3>
                     <ul>
-                        <li>
+                        <li class="float-left"> 
                             <a href="https://www.infopedia.pt/dicionarios/lingua-portuguesa/estomat%C3%B3pode">infopedia</a>
                         </li>
+                        <li class="float-right">
+                            <a href="https://pt.wikipedia.org/wiki/Stomatopoda">wikipedia</a>
+                        </li>
                     </ul>
-                </nav>
             </aside>
         </section>
+        <div class="clear"></div>
         <footer>
-            <p>compilado por <a href="https://github.com/andersonagodoy" target="_blank">Anderson</a></p>
+            <p class="footer-text">Compilado por <a href="https://github.com/andersonagodoy" target="_blank">Anderson</a></p>
         </footer>
+
+        <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
 </html>
