@@ -1,6 +1,6 @@
-x = 2;
-y = 1;
-resultado = 0;
+let x = 2;
+let y = 1;
+let resultado = 0;
 
 if (x > y) {
     resultado = x;
