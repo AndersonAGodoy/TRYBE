@@ -5,6 +5,7 @@ On April 2020 i started my study of software development at Trybe. so in this re
 **what i've done until now**
 - [x] Unix & Bash
 - [x] Git & Github
+- [x] HTML & CSS
 
 I will update this every time that i complete somethin new.
 
