@@ -3,12 +3,12 @@ let isOdd = [];
 
 for ( i = 0; i < numbers.length; i += 1 ) {
   if(numbers[i] % 2 !== 0) {
-    isOdd += numbers[i];
+    isOdd += 1;
   }   
 }
 
 if (isOdd % 2 !== 0) {
-  console.log(isOdd);
+  console.log(isOdd.length);
 } else {
   console.log("não existe números ímpares")
 }
