@@ -1,5 +1,5 @@
 let n = 9;
-let numberOfLines = (n + 1) /2 ;
+let numberOfLines = (n + 1) / 2;
 let controlLeft = numberOfLines;
 let controlRight = numberOfLines;
 let lineInput = "";
