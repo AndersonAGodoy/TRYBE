@@ -15,8 +15,6 @@ let patinhas = {
 for( i in margarida && patinhas) {
   if (i !== "recorrente"){
     console.log(margarida[i] + " e " + patinhas[i])
-  } else if( margarida[i] !== patinhas[i]) {
-    console.log(margarida[i] + " e " + patinhas[i])
   } else {
     console.log("Ambos são Recorrentes");
   }
