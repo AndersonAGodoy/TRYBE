@@ -6,15 +6,15 @@ function verificaPalimdromo(str) {
     return true;
   } else {
     return false;
-  }
+  } 
   
 }
 
 console.log(verificaPalimdromo("arara"));
 
-// sem utilizar funções auxiliadoras
 verificaPalimdromo("Desenvolvimento")
 
+// sem utilizar funções auxiliadoras
 function verificaPalimdromo2(str) {
   let newStr2 = "";
   
