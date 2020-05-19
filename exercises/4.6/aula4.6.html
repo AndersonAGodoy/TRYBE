@@ -83,6 +83,16 @@
       imgSmallRightContent.src = "https://picsum.photos/200";
       imgSmallRightContent.className = 'small-image'
       document.querySelector('.left-content').appendChild(imgSmallRightContent);
+
+      let arrayStringOfNumbers = ['Um', 'Dois','Três', 'Quarto', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      let Ordened = document.createElement('ol');
+      for(i=0; i < arrayStringOfNumbers.length; i += 1){
+        let listOrdened = document.createElement('li');
+        Ordened.appendChild(listOrdened);
+        listOrdened.innerHTML=  arrayStringOfNumbers[i];
+      }
+      document.querySelector('.right-content').appendChild(Ordened);
+      
     </script>
   </body>
 </html>
