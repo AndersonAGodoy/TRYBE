@@ -62,6 +62,14 @@
       let mainContent = document.createElement('div');
       mainContent.className = "main-content";
       document.querySelector('body').appendChild(mainContent);
+
+      let centerContent = document.createElement('div');
+      centerContent.className = "center-content";
+      document.querySelector('.main-content').appendChild(centerContent);
+
+      let pCenterContent = document.createElement('p');
+      pCenterContent.innerHTML = 'Algum texto Qualquer';
+      document.querySelector('.center-content').appendChild(pCenterContent);
     </script>
   </body>
 </html>
