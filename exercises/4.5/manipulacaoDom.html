@@ -49,7 +49,7 @@
       (x) 3. Crie uma função que mude a cor do quadrado vermelho para branco.
       (x)  4. Crie uma função que corrija o texto da tag <h1>.
       (x)  5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-        6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+      (x)  6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
         let changeTextPTag = function(text) {
@@ -75,14 +75,14 @@
         let textToUpperCase = function() {
           let element = document.getElementsByTagName("p");
           
-          for( i of element) i.innerHTML = i.innerHTML.toUpperCase();
+          for( i of element){ i.innerHTML = i.innerHTML.toUpperCase()};
           
         }
         textToUpperCase()
 
         let printP = function () {
           let element = document.getElementsByTagName("p");
-          for(el of element) console.log(el.innerHTML);
+          for(el of element){ console.log(el.innerHTML)};
         }
         printP();
         
