@@ -110,6 +110,14 @@
       rightContent.style = 'margin: auto';
       
       centerContent.style = "background-color: #3ba36b";
+
+function removeLi(parent, remove, position) {
+  let element = document.querySelectorAll(remove)[position];
+  document.getElementsByTagName(parent)[0].removeChild(element)
+}
+
+removeLi('ol', 'li', 9)
+removeLi('ol', 'li', 8)
     </script>
   </body>
 </html>
