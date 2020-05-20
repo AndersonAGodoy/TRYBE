@@ -1,0 +1,171 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 4.5</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+
+      function createH1ElementOnBody(element, text, where){
+        let h1Element = document.createElement(element);
+        h1Element.innerHTML = text;
+        document.querySelector(where).appendChild(h1Element);
+      }
+      createH1ElementOnBody('h1', 'Exercício 4.5 - JavaScript DOM', 'body')
+
+      function createMainContentWithClassOnBody(element, className, where){
+        let mainContent = document.createElement(element);
+        mainContent.className = className;
+        document.querySelector(where).appendChild(mainContent);
+      }
+      createMainContentWithClassOnBody('div', 'main-content', 'body');
+
+      function createCenterContentWithClassOnMainContent(element, className, where){
+        let centerContent = document.createElement(element);
+        centerContent.className = className;
+        document.querySelector(where).appendChild(centerContent);
+      }
+      createCenterContentWithClassOnMainContent('div', 'center-content', '.main-content');
+
+      function createPOnCenterContent(element, text, where) {        
+        let pCenterContent = document.createElement(element);
+        pCenterContent.innerHTML = text;
+        document.querySelector(where).appendChild(pCenterContent);
+      }
+      createPOnCenterContent('p', 'Algum texto Qualquer', '.center-content');
+
+      function createLeftContent(element, className, where) {
+        let leftContent = document.createElement(element);
+        leftContent.className = className;
+        document.querySelector(where).appendChild(leftContent);
+      }
+      createLeftContent('div', 'left-content', '.main-content');
+
+      function createRightContent(element, className, where) {
+        let rightContent = document.createElement(element);
+        rightContent.className = className;
+        document.querySelector(where).appendChild(rightContent);
+      }
+      createRightContent('div', 'right-content', '.main-content');
+
+      function createImgOnRightContent(element, src, className, where) {
+        let imgSmallRightContent = document.createElement(element);
+        imgSmallRightContent.src = src;
+        imgSmallRightContent.className = className;
+        document.querySelector(where).appendChild(imgSmallRightContent);
+      }
+      createImgOnRightContent('img', 'https://picsum.photos/200', 'small-image', '.left-content');
+
+      function createOlList(array, where){
+        let Ordened = document.createElement('ol');
+        for(i=0; i < array.length; i += 1){
+          let listOrdened = document.createElement('li');
+          Ordened.appendChild(listOrdened);
+          listOrdened.innerHTML=  array[i];
+        }
+        document.querySelector(where).appendChild(Ordened);        
+      }
+      let arrayStringOfNumbers = ['Um', 'Dois','Três', 'Quarto', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      createOlList(arrayStringOfNumbers, '.right-content');
+
+      function createH3Elements(where){
+        for(let i = 1; i <=3;  i += 1) {
+          let h3MainContent = document.createElement('h3');
+          document.querySelector(where).appendChild(h3MainContent);
+        }
+      }
+      createH3Elements('.main-content');
+
+      function createH1ClassName() {
+        h1Element = document.querySelector('h1');
+        h1Element.className = 'title';
+      }
+      createH1ClassName();  
+
+      function createListOfh3(element, className) {
+        let listOfH3 = document.querySelectorAll(element);
+        for(let i = 0; i < listOfH3.length; i += 1) {
+          listOfH3[i].className = className;
+        }
+      }
+      createH1ClassName('h3', 'description')
+
+      function removeSomeContent(parent, child) {
+        mainContent = document.querySelector(parent);
+        leftContent = document.querySelector(child);
+        mainContent.removeChild(leftContent);
+      }
+      removeSomeContent('.main-content', '.left-content');
+
+      function rightContentCenter(element) {
+        rightContent = document.querySelector(element)
+        rightContent.style = 'margin: auto'; 
+      }
+      rightContentCenter('.right-content');
+
+      function centerContentBackground(color) {
+        centerContent = document.querySelector('.center-content');
+        centerContent.style = `background-color: ${color}`;
+      }
+      centerContentBackground("#3ba36b");
+
+    function removeLi(parent, remove, position) {
+      let element = document.querySelectorAll(remove)[position];
+      document.getElementsByTagName(parent)[0].removeChild(element)
+    }
+    removeLi('ol', 'li', 9)
+    removeLi('ol', 'li', 8)
+    
+    </script>
+  </body>
+</html>
