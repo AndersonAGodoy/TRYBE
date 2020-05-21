@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Cat Walk</title>
+ </head>
+ <body>
+  
+  <img class="catWalkImg" style="position: absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif"/>
+  <button class="button" style="position: absolute; top:320px;">Click here to move the cat!</button>
+ </body>
+ <script>
+    let catReference = document.querySelector('.catWalkImg');
+    catReference.style.marginLeft = 0;
+    let btn = document.querySelector('.button');
+    
+    function reset(reference){
+      catReference.style.marginLeft = 0;
+    }
+    function catWalk(){
+      setInterval(function(){
+        catReference.style.marginLeft = parseInt(catReference.style.marginLeft) + (Math.random() * 10) + "px";
+        if(parseInt(catReference.style.marginLeft) >= window.innerWidth) {
+          reset(catReference);
+        }
+      },50);
+    }
+    btn.addEventListener('click', catWalk);
+ </script>
+</html>
