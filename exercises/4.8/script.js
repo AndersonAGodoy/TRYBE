@@ -81,3 +81,11 @@ function updateAll2(event) {
   localStorage.setItem('pColor', event.target.value);
   
 }
+
+function changeIt() {
+  document.querySelector('p').style.fontSize = localStorage.getItem('fontType') + 'px';
+  document.querySelector('p').style.lineHeight = localStorage.getItem('lineHeight') + 'px';
+  document.querySelector('p').style.color = localStorage.getItem('pColor');
+  document.querySelector('body').style.fontFamily = localStorage.getItem('fontFamilyFont');
+  document.querySelector('body').style.backgroundColor = localStorage.getItem('backgroundColor');
+}
