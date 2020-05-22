@@ -27,3 +27,9 @@ function changeTextSize() {
   changeIt();
 }
 
+function changelineHeight() {
+  let lineHeight2 = lineHeightInput.value;
+  localStorage.setItem('lineHeight', lineHeight2);
+  changeIt();
+} 
+
