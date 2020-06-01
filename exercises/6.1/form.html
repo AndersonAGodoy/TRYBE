@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" action="">
+        <div class="form-group">
+          <label for="input-name">Nome</label>
+          <input
+            data-validate='name, required'
+            id="input-name"
+            class="form-control"
+            name="input-name"
+            type="text"
+            required="required"
+          />
+        </div>
+        <label for="input-email">Email</label>
+        <input
+          data-validate='email'
+          type="text"
+          id="input-email"
+          class="form-control"
+          name="input-email"
+          required="required"
+        />
+        <small class="form-text text-muted"
+          >Nós nunca compartihamos seu email</small
+        >
+        <label for="input-CPF">CPF</label>
+        <input
+        data-validate='cpf'
+          type="text"
+          id="input-CPF"
+          class="form-control"
+          name="input-CPF"
+          maxlength="11"
+          required="required"
+        />
+        <label for="input-endereco">Endereco</label>
+        <input
+          data-validate='address'
+          type="text"
+          id="input-endereco"
+          class="form-control"
+          name="input-endereco"
+          maxlength="200"
+          required="required"
+        />
+        <label for="input-cidade">Cidade</label>
+        <input
+          data-validate="city"
+          type="text"
+          id="input-cidade"
+          class="form-control"
+          name="input-cidade"
+          maxlength="28"
+          required="required"
+        />
+        <label for="input-estado">Estado</label>
+        <select
+          data-validate="state"
+          name="input-estado"
+          id="input-estado"
+          class="form-control"
+          required="required"
+        >
+          <option value="Selecione" selected="selected">Selecione:</option>
+        </select>
+        <div class="form-check">
+          <input
+          data-validate="checkbox"
+          class="form-check-input"
+          type="radio"
+          id="ondeMora1"
+          name="id_casa"
+          value="casa"
+          required="required"
+          />
+          <label class="form-check-label" for="ondeMora1">Casa</label>
+        </div>
+        <div class="form-check">
+          <input
+          data-validate="checkbox"
+          class="form-check-input"
+          type="radio"
+          id="ondeMora2"
+          name="id_casa"
+          value="casa"
+          required="required"
+          />
+          <label class="form-check-label" for="ondeMora2">Apartamento</label>
+        </div>
+        <label for="curriculum">Resumo do Curriculo</label>
+        <textarea
+        data-validate="text"
+          name="curriculum"
+          id="curriculum"
+          class="form-control"
+          maxlength="1000"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <label for="cargo">Cargo</label>
+        <input
+          type="text"
+          id="cargo"
+          class="form-control"
+          name="cargo"
+          maxlength="40"
+          required="required"
+        />
+        <label for="data-inicio">Data de início</label>
+        <input
+          type="text"
+          id="data-inicio"
+          class="form-control"
+          name="data-inicio"
+          required="required"
+        />
+      </form>
+      <button id="submit-button" type="submit" class="btn btn-success col-md-12">
+        Enviar
+      </button>
+    </div>
+    
+   
+    <script src="node_modules/popup-validation/bin/validation.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
