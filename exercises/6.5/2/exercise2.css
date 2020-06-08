@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.menu {
+  display: flex;
+  background-color: #4cc984;
+  padding: 5px 0;
+}
+
+  .menu ul li {
+    display: inline;
+    margin-left: 30px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .menu ul li:first-child{
+    margin-left: 0;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .aside-one h2{
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .aside-one ul {
+    list-style: none;
+  }
+
+  .aside-two h2{
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .aside-two ul {
+    list-style: none;
+  }
+
+  @media screen and (min-width:320px){
+    .aside-one ul {
+      padding: 0 20px;
+    }
+
+    .aside-one ul li {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .aside-two ul {
+      width: 100%;
+    }
+
+    .aside-two ul li {
+      font-size: 20px;
+    }
+    
+    .main-content {
+      padding: 0 20px;
+    }
+
+    .main-content h1 {
+      font-size: 30px;
+      padding: 20px;
+    }
+
+    .main-content p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    
+    .footer {
+      padding: 0 20px;
+    }
+
+    .footer h3{
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .footer p {
+      font-size: 20px;
+      line-height: 30px;
+
+    }
+
+  h1{
+    display: flex;
+    font-size: 40px;
+    padding: 40px 10px;
+    justify-content: center;
+  }
+}
