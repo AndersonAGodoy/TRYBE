@@ -63,16 +63,11 @@ const books = [
   },
 ];
 
-const expected_result = [
-  'Frank Herbert',
-  'George R. R. Martin',
-  'Isaac Asimov',
-  'J. R. R. Tolkien'
-]
+const expected_result = 43;
 
-function fantasyOrScienceFictionAuthors() {
- const authorFilter = books.filter(book => book.genre === 'Ficção Científica' || book.genre === 'Fantasia') 
- return authorFilter.map(author => author.author.name).sort()
+function averageAge() {
+  const authorAge = (result, age) => result + age.releaseYear - age.author.birthYear
+  return books.reduce(authorAge, 0)/books.length;
 }
 
-assert.deepEqual(fantasyOrScienceFictionAuthors(), expected_result);
+assert.equal(averageAge(), expected_result);
