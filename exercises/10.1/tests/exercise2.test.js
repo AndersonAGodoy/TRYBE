@@ -17,7 +17,7 @@ const users = {
     return findUserById(userID).then(user => user.name);
   }
 
-  it('should be returned user name', () => {
+  it('should be return user name', () => {
     expect.assertions(1);
     return getUserName(4).then( () =>{
       expect(users[4].name).toEqual("Mark")
