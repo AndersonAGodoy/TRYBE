@@ -6,8 +6,12 @@ On April 2020 i started my study of software development at Trybe. so in this re
 - [x] Unix & Bash
 - [x] Git & Github
 - [x] HTML & CSS
+- [x] Javascript
+- [X] ES6
+- [X] JEST
 
-I will update this every time that i complete somethin new.
+
+I will update this every time that i complete something new.
 
 If you want to suggest something, please, send me a message. feel free to do this.
 
